@@ -3,7 +3,7 @@ print("BMI Calculator")
 print("=================")
 
 berat = float(input("Enter your body weight (kg): "))
-tinggi = float(input("Enter your body height (m): "))55
+tinggi = float(input("Enter your body height (m): "))
 
 bmi = berat / (tinggi * tinggi)
 print("Your BMI is:", bmi)
