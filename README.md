@@ -23,7 +23,7 @@ A simple Python command-line BMI (Body Mass Index) calculator that helps users d
 4. Run the program:
 
 ```bash
-python bmi_calculator.py
+python bmi-calc.py
 ```
 
 ## Example
