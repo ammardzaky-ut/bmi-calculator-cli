@@ -1,18 +1,39 @@
+class BMICalculator:
+    def __init__(self, weight: float, height_cm: float):
+        self.weight = weight
+        self.height_m = height_cm / 100  # konversi cm ke meter
 
-print("BMI Calculator")
-print("=================")
+    def calculate(self) -> float:
+        return round(self.weight / (self.height_m ** 2), 2)
 
-berat = float(input("Enter your body weight (kg): "))
-tinggi = float(input("Enter your body height (m): "))
+    def category(self) -> str:
+        bmi = self.calculate()
+        if bmi < 18.5:
+            return "Kurus"
+        elif bmi < 25:
+            return "Normal"
+        elif bmi < 30:
+            return "Gemuk"
+        else:
+            return "Obesitas"
 
-bmi = berat / (tinggi * tinggi)
-print("Your BMI is:", bmi)
-if bmi < 18.5:
-    print("Your category is: Underweight")
-elif 18.5 <= bmi < 25:
-    print("Your category is: Normal weight")
-elif 25 <= bmi < 30:
-    print("Your category is: Overweight")
-else:
-    print("Your category is: Obesity")
-# Program ini menghitung BMI berdasarkan berat dan tinggi yang dimasukkan oleh pengguna, kemudian memberikan kategori berdasarkan hasil BMI tersebut.   
+
+def main():
+    print("=== BMI Calculator ===")
+    try:
+        user_weight = float(input("Masukkan berat badan (kg): "))
+        user_height = float(input("Masukkan tinggi badan (cm): "))
+
+        if user_weight <= 0 or user_height <= 0:
+            print("Error: Berat dan tinggi harus lebih dari 0.")
+            return
+
+        calc = BMICalculator(user_weight, user_height)
+        print(f"BMI kamu: {calc.calculate()} ({calc.category()})")
+
+    except ValueError:
+        print("Error: Input tidak valid. Harap masukkan angka.")
+
+
+if __name__ == "__main__":
+    main()
