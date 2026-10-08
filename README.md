@@ -1,52 +1,18 @@
 # BMI Calculator CLI
 
-A simple Python command-line BMI (Body Mass Index) calculator that helps users determine their BMI and weight category.
+A Python command-line BMI (Body Mass Index) calculator built with Object-Oriented Programming (OOP) principles.
 
-## Features
+## Features & Architecture
 
-* Enter weight in kilograms
-* Enter height in meters
-* Calculate BMI automatically
-* Display BMI result
-* Show weight category:
-
-  * Underweight
-  * Normal weight
-  * Overweight
-  * Obese
+* **Object-Oriented Design:** Core logic is encapsulated within a `BMICalculator` class to ensure reusability and maintainability.
+* **Error Handling:** Implements `try-except` blocks to validate user inputs gracefully and prevent crashes from non-numeric strings or zero-division.
+* **Type Hinting:** Utilizes standard Python type hinting for better code readability.
 
 ## How to Run
 
-1. Make sure Python is installed.
-2. Download or clone this project.
-3. Open a terminal in the project folder.
-4. Run the program:
+1. Ensure Python 3.x is installed on your system.
+2. Clone this repository or download the source code.
+3. Open a terminal and execute the script:
 
 ```bash
 python bmi-calc.py
-```
-
-## Example
-
-```text
-=== BMI Calculator ===
-Enter your weight (kg): 70
-Enter your height (m): 1.75
-
-Your BMI is: 22.86
-Category: Normal weight
-```
-
-## What I Learn?
-
-* Variables
-* User input with `input()`
-* Type conversion (`float()`)
-* Mathematical operations
-* Conditional statements (`if`, `elif`, `else`)
-* f-strings
-* Basic program flow
-
-## Author
-
-Created by Dzaky
