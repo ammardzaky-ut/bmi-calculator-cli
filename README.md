@@ -16,3 +16,22 @@ A Python command-line BMI (Body Mass Index) calculator built with Object-Oriente
 
 ```bash
 python bmi-calc.py
+```
+
+## Example Usage
+
+```bash
+=== BMI Calculator ===
+Masukkan berat badan (kg): 70
+Masukkan tinggi badan (cm): 175
+
+BMI kamu: 22.86 (Normal)
+```
+
+## Development Usage
+
+This project was initially written as a basic procedural script. As part of my progression towards enterprise-level Python development, it has been refactored into a scalable OOP structure adhering to cleaner architectural standards.
+
+## Author
+
+Created by Dzaky
